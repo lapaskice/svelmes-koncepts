@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Svelmes, viesu nams pie Bauskas šosejas (dizaina priekšlikums)</title>
+<meta name="description" content="Guļbūve ar svinību zāli līdz 70 viesiem, divas pirtis, viesnīca un namiņš pie dīķa bērzu birzī, 12 km no Rīgas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c2b30; --ink2:#123a40; --night:#071a1d;
+  --honey:#f4b23e; --honey-d:#d9931c;
+  --birch:#ffffff; --paper:#edf3f1; --line:#cfdcd8;
+  --t:#0c2b30; --tm:#4a6267; --l:#f2f7f5; --lm:rgba(242,247,245,.74);
+  --disp:"Unbounded",system-ui,sans-serif; --body:"Manrope",system-ui,sans-serif;
+  --g:20px; --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--t);font:16px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+[data-lang][hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(var(--g),env(safe-area-inset-left,0px));padding-right:max(var(--g),env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.08;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.eyebrow{font:700 12px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase}
+
+.notice{background:var(--night);color:var(--lm);font-size:13px;line-height:1.4;text-align:center;padding:8px var(--g)}
+.notice b{color:var(--honey)}
+.notice a{color:var(--l)}
+
+/* hero */
+.hero{position:relative;color:var(--l);background:var(--night);min-height:640px;display:flex;flex-direction:column;justify-content:flex-end}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero picture img{object-position:50% 30%}
+@media (min-width:760px){.hero picture img{object-position:40% 55%}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,26,29,.55) 0%,rgba(7,26,29,0) 22%,rgba(7,26,29,0) 42%,rgba(7,26,29,.88) 74%,var(--night) 100%)}
+.top{position:absolute;z-index:3;top:0;left:0;right:0}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--l)}
+.brand svg{width:30px;height:32px;color:var(--honey)}
+.brand b{font:800 18px/1 var(--disp);letter-spacing:.04em}
+.brand small{display:block;font:600 10px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--lm);margin-top:3px}
+.langs{display:flex;gap:4px}
+.langs button{font:700 13px var(--body);color:var(--l);background:rgba(7,26,29,.35);border:1px solid rgba(242,247,245,.35);padding:7px 10px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--honey);border-color:var(--honey);color:var(--night)}
+.hero .wrap.txt{position:relative;z-index:2;padding-top:120px;padding-bottom:30px}
+.hero .eyebrow{color:var(--honey)}
+.hero h1{font-size:clamp(34px,9.4vw,64px);margin:12px 0 14px;max-width:13ch}
+.hero p.lead{font-size:17px;color:var(--lm);max-width:34ch;margin:0 0 22px}
+.acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 15px/1 var(--body);padding:16px 20px;border:2px solid transparent;text-decoration:none;cursor:pointer}
+.btn-h{background:var(--honey);color:var(--night)}
+.btn-h:hover{background:#ffc75c}
+.btn-o{border-color:rgba(242,247,245,.6);color:var(--l);background:transparent}
+.btn-d{background:var(--ink);color:var(--l)}
+.btn svg{width:18px;height:18px}
+
+/* numbers */
+.nums{background:var(--night);color:var(--l);padding:4px 0 34px}
+.nums .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;border-top:1px solid rgba(242,247,245,.16);padding-top:22px}
+.num b{display:block;font:800 clamp(30px,8vw,54px)/1 var(--disp);color:var(--honey)}
+.num span{display:block;font-size:13px;color:var(--lm);margin-top:6px;line-height:1.3}
+
+/* places */
+.places{padding:64px 0 70px}
+.sec-h{display:grid;gap:12px;margin-bottom:30px}
+.sec-h .eyebrow{color:var(--honey-d)}
+.sec-h h2{font-size:clamp(28px,7vw,48px)}
+.sec-h p{margin:0;color:var(--tm);max-width:52ch}
+.cards{display:grid;gap:18px}
+.card{background:var(--birch);border:1px solid var(--line);display:grid;overflow:hidden}
+.card .ph{position:relative}
+.card .ph img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.card .big{position:absolute;left:0;bottom:0;background:var(--honey);color:var(--night);padding:12px 16px 10px;font:800 34px/1 var(--disp)}
+.card .big small{display:block;font:700 11px/1.2 var(--body);letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
+.card .bd{padding:20px 20px 22px;display:grid;gap:12px;align-content:start}
+.card h3{font-size:22px}
+.card p{margin:0;color:var(--tm)}
+.inside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.inside.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.inside img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.inside figure{margin:0}
+.inside figcaption{font-size:12px;color:var(--tm);margin-top:4px;line-height:1.25}
+.ask{font:800 14px var(--body);color:var(--ink);text-decoration:none;display:inline-flex;gap:8px;align-items:center;border-bottom:2px solid var(--honey);padding-bottom:3px;justify-self:start;background:none;border-top:0;border-left:0;border-right:0;cursor:pointer}
+
+/* kitchen */
+.kitchen{background:var(--ink);color:var(--l);padding:70px 0}
+.kitchen .grid{display:grid;gap:26px}
+.kitchen .main img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.kitchen figcaption,.yard figcaption{font-size:12px;color:var(--lm);margin-top:6px}
+.kitchen blockquote{margin:0;font:800 clamp(26px,6.6vw,40px)/1.12 var(--disp);color:var(--honey)}
+.kitchen .who{font-size:13px;color:var(--lm);margin-top:10px}
+.kitchen p{color:var(--lm);margin:0}
+.kitchen .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.kitchen .two img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.kitchen figure{margin:0}
+
+/* reviews */
+.reviews{background:var(--honey);color:var(--night);padding:64px 0}
+.reviews .eyebrow{color:var(--night);opacity:.7}
+.reviews .q{display:grid;gap:30px;margin-top:20px}
+.reviews blockquote{margin:0}
+.reviews blockquote p{margin:0;font:600 clamp(21px,5.4vw,30px)/1.28 var(--disp)}
+.reviews cite{display:block;font:700 13px var(--body);font-style:normal;margin-top:10px}
+.reviews .more{margin-top:28px;font-weight:700}
+
+/* yard */
+.yard{padding:64px 0}
+.yard .mos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:24px}
+.yard .mos figure{margin:0}
+.yard .mos figure:first-child{grid-column:1/-1}
+.yard .mos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.yard .mos figure:first-child img{aspect-ratio:16/9}
+.yard figcaption{color:var(--tm)}
+
+/* request */
+.req{background:var(--night);color:var(--l);padding:66px 0 72px}
+.req .sec-h p{color:var(--lm)}
+.req .sec-h .eyebrow{color:var(--honey)}
+.form{background:var(--ink2);padding:20px;display:grid;gap:18px}
+.lbl{font:800 12px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--honey);margin-bottom:9px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font:700 14px var(--body);color:var(--l);background:transparent;border:1.5px solid rgba(242,247,245,.32);padding:10px 13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--l);color:var(--night);border-color:var(--l)}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+input[type=date],input[type=text]{width:100%;min-width:0;font:600 16px var(--body);color:var(--night);background:var(--l);border:0;padding:13px 12px;border-radius:0}
+.step{display:flex;align-items:stretch}
+.step button{width:46px;font:800 20px var(--body);background:var(--l);color:var(--night);border:0;cursor:pointer}
+.step output{flex:1;display:flex;align-items:center;justify-content:center;background:#fff;color:var(--night);font:800 18px var(--body);min-width:0}
+.sendrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.sendrow .btn{padding:16px 10px}
+.fine{font-size:12.5px;color:var(--lm);margin:0}
+.peek summary{cursor:pointer;font:700 14px var(--body);color:var(--honey);list-style:none}
+.peek summary::-webkit-details-marker{display:none}
+.peek pre{white-space:pre-wrap;word-wrap:break-word;font:14px/1.5 var(--body);background:var(--l);color:var(--night);padding:14px;margin:10px 0 0}
+
+/* way */
+.way{background:var(--birch);padding:64px 0}
+.way .grid{display:grid;gap:26px}
+.way address{font-style:normal;font-size:18px;font-weight:700;line-height:1.4}
+.way .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.way .btn-d{padding:14px 16px}
+.kv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 18px;margin:0;font-size:16px}
+.kv dt{color:var(--tm)}
+.kv dd{margin:0;font-weight:700;word-break:break-word}
+.note-o{margin-top:28px;border:1px solid var(--line);background:var(--paper)}
+.note-o summary{cursor:pointer;padding:14px 16px;font-weight:800;list-style:none}
+.note-o summary::-webkit-details-marker{display:none}
+.note-o .in{padding:0 16px 16px;color:var(--tm);font-size:15px;display:grid;gap:10px}
+.note-o .in img{max-width:240px;border:1px solid var(--line)}
+.note-o p{margin:0}
+
+footer{background:var(--night);color:var(--lm);padding:44px 0 110px;font-size:13.5px}
+footer .brand{margin-bottom:18px}
+footer p{margin:0 0 10px;max-width:70ch}
+footer a{color:var(--l)}
+
+/* sticky phone bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:minmax(0,1fr) 56px;gap:8px;padding:10px max(var(--g),env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(var(--g),env(safe-area-inset-left,0px));background:rgba(7,26,29,.94);transition:transform .25s}
+.bar.off{transform:translateY(110%)}
+.bar .btn{padding:15px 10px}
+.bar .tel{background:transparent;border:2px solid rgba(242,247,245,.45);color:var(--l)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar{transition:none}}
+
+
+@media (max-width:759px){
+  .hero{display:block;min-height:0}
+  .hero picture{position:relative;display:block}
+  .hero picture img{position:relative;inset:auto;height:auto;aspect-ratio:780/860;object-position:50% 20%}
+  .hero::after{display:none}
+  .hero picture::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,26,29,.55) 0%,rgba(7,26,29,0) 20%,rgba(7,26,29,0) 62%,var(--night) 100%)}
+  .hero .wrap.txt{padding-top:0;margin-top:-56px}
+}
+@media (min-width:760px){
+  :root{--g:32px}
+  .hero{min-height:760px}
+  .hero .wrap.txt{padding-bottom:56px}
+  .nums .wrap{gap:30px}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .kitchen .grid{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:44px}
+  .reviews .q{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+  .yard .mos{grid-template-columns:2fr 1fr 1fr}
+  .yard .mos figure:first-child{grid-column:auto}
+  .yard .mos img,.yard .mos figure:first-child img{aspect-ratio:4/3;height:100%}
+  .req .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:44px;align-items:start}
+  .way .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px}
+  .bar{display:none}
+  footer{padding-bottom:44px}
+}
+@media (min-width:1100px){
+  .hero h1{max-width:15ch}
+}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav viesu nama „Svelmes” oficiālā lapa.</span><span data-lang="ru" hidden>Дизайн-предложение, не официальный сайт гостевого дома «Svelmes».</span> <a href="#piezime"><span data-lang="lv">Ko tā salabo?</span><span data-lang="ru" hidden>Что она исправляет?</span></a></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="s-mark" viewBox="0 0 559 592"><path fill="currentColor" fill-rule="evenodd" d="M255 0 262 0 279 8 293 11 308 19 319 21 324 25 358 36 363 40 369 40 384 46 388 50 415 57 421 61 427 61 430 58 444 31 451 30 461 37 457 49 441 72 430 96 410 125 400 147 394 153 383 173 383 178 465 190 491 200 497 200 531 216 548 221 550 229 559 230 557 252 559 306 557 308 516 306 490 290 463 280 402 272 331 276 323 282 310 301 289 301 287 298 295 284 294 278 253 283 211 282 174 275 148 264 122 242 106 216 100 216 88 229 82 251 91 273 116 297 30 296 28 294 24 276 30 249 35 239 65 209 99 190 103 171 113 149 114 141 138 102 173 67 192 54 224 27 229 20 237 16 242 9Z M227 78 205 84 193 91 176 107 167 123 166 147 173 167 185 182 201 192 215 193 224 189 349 186 353 184 380 142 380 137 376 133 348 119 336 110 330 109 325 104 319 104 312 99 271 83 253 79Z M55 433 248 436 379 485 392 484 406 476 430 454 439 440 506 442 507 447 493 460 419 495 418 499 424 504 473 525 487 527 508 513 526 497 527 526 525 529 518 529 503 537 496 543 413 589 400 589 310 549 291 544 274 552 266 552 260 556 165 588 133 592 91 592 55 583 27 569 11 551 2 530 0 501 4 482 11 467 36 442Z M77 495 70 496 50 507 41 516 34 532 34 541 45 559 68 573 110 580 150 578 200 567 237 552 262 538 260 534 247 529 195 516 160 504 153 504 146 500Z"/></symbol></svg>
+
+<header class="hero" id="sakums">
+  <picture>
+    <source media="(min-width:760px)" srcset="img/hero-wide.jpg">
+    <img src="img/hero-m.jpg" width="780" height="1039" alt="Svelmes guļbūve un viesnīcas ēka atspīd dīķī starp eglēm un bērziem" fetchpriority="high">
+  </picture>
+  <div class="top"><div class="wrap">
+    <a class="brand" href="#sakums"><svg aria-hidden="true"><use href="#s-mark"/></svg><span><b>SVELMES</b><small><span data-lang="lv">viesu nams</span><span data-lang="ru" hidden>гостевой дом</span></small></span></a>
+    <div class="langs" role="group" aria-label="Valoda"><button type="button" data-set="lv" aria-pressed="true">LV</button><button type="button" data-set="ru" aria-pressed="false">RU</button></div>
+  </div></div>
+  <div class="wrap txt">
+    <p class="eyebrow"><span data-lang="lv">Bauskas šoseja, 12 km no Rīgas</span><span data-lang="ru" hidden>Бауское шоссе, 12 км от Риги</span></p>
+    <h1><span data-lang="lv">Divas pirtis un zāle līdz 70 viesiem</span><span data-lang="ru" hidden>Две бани и зал до 70 гостей</span></h1>
+    <p class="lead"><span data-lang="lv">Guļbūve pie dīķa bērzu birzī. Galdus klājam un gatavojam paši, pēc pirts var palikt pa nakti.</span><span data-lang="ru" hidden>Сруб у пруда в берёзовой роще. Столы накрываем и готовим сами, после бани можно остаться на ночь.</span></p>
+    <div class="acts">
+      <a class="btn btn-h" href="#datums"><span data-lang="lv">Pajautāt par datumu</span><span data-lang="ru" hidden>Спросить о дате</span></a>
+      <a class="btn btn-o" href="tel:+37129172544"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>29 172 544</a>
+    </div>
+  </div>
+</header>
+
+<section class="nums" aria-label="Skaitļos">
+  <div class="wrap">
+    <div class="num"><b>70</b><span data-lang="lv">viesi guļbūves banketzālē</span><span data-lang="ru" hidden>гостей в банкетном зале сруба</span></div>
+    <div class="num"><b>2</b><span data-lang="lv">pirtis, lielā un mazā ar baseinu</span><span data-lang="ru" hidden>бани, большая и малая с бассейном</span></div>
+    <div class="num"><b>12<small style="font-size:.5em"> km</small></b><span data-lang="lv">no Rīgas, ap 15 minūtes</span><span data-lang="ru" hidden>от Риги, около 15 минут</span></div>
+  </div>
+</section>
+
+<section class="places" id="majas">
+  <div class="wrap">
+    <div class="sec-h">
+      <p class="eyebrow"><span data-lang="lv">Ko var rezervēt</span><span data-lang="ru" hidden>Что можно забронировать</span></p>
+      <h2><span data-lang="lv">Četras vietas vienā sētā</span><span data-lang="ru" hidden>Четыре места в одном дворе</span></h2>
+      <p><span data-lang="lv">Teritorija ir nožogota, mašīnām ir liela stāvvieta. Izvēlieties vienu vai ņemiet visu sētu.</span><span data-lang="ru" hidden>Территория огорожена, для машин есть большая стоянка. Выберите одно место или берите весь двор.</span></p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="ph"><img src="img/gulbuve.jpg" width="900" height="599" loading="lazy" alt="Guļbūve pie dīķa ar koka laipu"><div class="big">70<small><span data-lang="lv">viesi zālē</span><span data-lang="ru" hidden>гостей в зале</span></small></div></div>
+        <div class="bd">
+          <h3><span data-lang="lv">Guļbūve</span><span data-lang="ru" hidden>Сруб</span></h3>
+          <p><span data-lang="lv">Zem viena jumta banketzāle un slapjā pirts, ko kurina ar malku, pērties var ar slotiņām. Otrajā stāvā trīs istabas, nakšņot var līdz 50 viesiem uz matračiem ar gultas veļu. Laukā terase un āra džakuzi četriem.</span><span data-lang="ru" hidden>Под одной крышей банкетный зал и русская баня на дровах, париться можно с вениками. На втором этаже три комнаты, переночевать могут до 50 гостей на матрасах с постельным бельём. Во дворе терраса и джакузи на четверых.</span></p>
+          <div class="inside">
+            <figure><img src="img/gulbuve-zale.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Banketzāle</span><span data-lang="ru" hidden>Банкетный зал</span></figcaption></figure>
+            <figure><img src="img/gulbuve-pirts.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Slapjā pirts</span><span data-lang="ru" hidden>Русская баня</span></figcaption></figure>
+            <figure><img src="img/gulbuve-dzakuzi.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Āra džakuzi</span><span data-lang="ru" hidden>Джакузи</span></figcaption></figure>
+          </div>
+          <button class="ask" type="button" data-house="gul"><span data-lang="lv">Pajautāt par guļbūvi</span><span data-lang="ru" hidden>Спросить о срубе</span> →</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/maza-baseins.jpg" width="900" height="599" loading="lazy" alt="Baseins mazajā pirtī ar koka griestiem"><div class="big">20–25<small><span data-lang="lv">viesi kamīnzālē</span><span data-lang="ru" hidden>гостей в каминном зале</span></small></div></div>
+        <div class="bd">
+          <h3><span data-lang="lv">Mazā pirts ar baseinu</span><span data-lang="ru" hidden>Малая баня с бассейном</span></h3>
+          <p><span data-lang="lv">Viesnīcas ēkā, ar atsevišķu ieeju no terases. Baseins, slapjā pirts ar slotiņām un kamīnzāle, kurā vietas ir 20 līdz 25 viesiem.</span><span data-lang="ru" hidden>В здании гостиницы, с отдельным входом с террасы. Бассейн, баня с вениками и каминный зал на 20–25 гостей.</span></p>
+          <div class="inside">
+            <figure><img src="img/maza-kaminzale.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Kamīnzāle</span><span data-lang="ru" hidden>Каминный зал</span></figcaption></figure>
+            <figure><img src="img/maza-pirts.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Pirts</span><span data-lang="ru" hidden>Баня</span></figcaption></figure>
+            <figure><img src="img/gulbuve-terase.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Terase</span><span data-lang="ru" hidden>Терраса</span></figcaption></figure>
+          </div>
+          <button class="ask" type="button" data-house="maza"><span data-lang="lv">Pajautāt par mazo pirti</span><span data-lang="ru" hidden>Спросить о малой бане</span> →</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/viesnica.jpg" width="900" height="600" loading="lazy" alt="Divstāvu viesnīcas ēka priežu ieskauta"><div class="big">12<small><span data-lang="lv">guļvietas</span><span data-lang="ru" hidden>мест</span></small></div></div>
+        <div class="bd">
+          <h3><span data-lang="lv">Viesnīca</span><span data-lang="ru" hidden>Гостиница</span></h3>
+          <p><span data-lang="lv">Četri numuriņi ar televizoru, dušu un tualeti, kopā līdz 12 viesiem. Tajā pašā ēkā strādā kafejnīca ar bāru.</span><span data-lang="ru" hidden>Четыре номера с телевизором, душем и туалетом, всего до 12 гостей. В том же здании работает кафе с баром.</span></p>
+          <div class="inside two">
+            <figure><img src="img/viesnica-numurs.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Numuriņš</span><span data-lang="ru" hidden>Номер</span></figcaption></figure>
+            <figure><img src="img/viesnica-kafejnica.jpg" width="520" height="390" loading="lazy" alt=""><figcaption><span data-lang="lv">Kafejnīca</span><span data-lang="ru" hidden>Кафе</span></figcaption></figure>
+          </div>
+          <button class="ask" type="button" data-house="vies"><span data-lang="lv">Pajautāt par numuriņiem</span><span data-lang="ru" hidden>Спросить о номерах</span> →</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/namins.jpg" width="900" height="600" loading="lazy" alt="Divstāvu koka namiņš priežu mežā ar koka soliem zālienā"><div class="big">5–7<small><span data-lang="lv">viesi</span><span data-lang="ru" hidden>гостей</span></small></div></div>
+        <div class="bd">
+          <h3><span data-lang="lv">Namiņš savrup</span><span data-lang="ru" hidden>Отдельный домик</span></h3>
+          <p><span data-lang="lv">Atsevišķs divstāvu namiņš ar virtuvi, dušu, tualeti un internetu. Mazai kompānijai vai ģimenei, kas grib būt savrup no svinībām.</span><span data-lang="ru" hidden>Отдельный двухэтажный домик с кухней, душем, туалетом и интернетом. Для небольшой компании или семьи, которая хочет быть в стороне от праздника.</span></p>
+          <button class="ask" type="button" data-house="nam"><span data-lang="lv">Pajautāt par namiņu</span><span data-lang="ru" hidden>Спросить о домике</span> →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="kitchen" id="virtuve">
+  <div class="wrap grid">
+    <figure class="main"><img src="img/galds.jpg" width="900" height="562" loading="lazy" alt="Klāts banketa galds guļbūves zālē"><figcaption><span data-lang="lv">Klāts galds guļbūves zālē. Foto: Juris Neretnieks, Google kartes</span><span data-lang="ru" hidden>Накрытый стол в зале сруба. Фото: Juris Neretnieks, Google Карты</span></figcaption></figure>
+    <div style="display:grid;gap:18px">
+      <p class="eyebrow" style="color:var(--honey)"><span data-lang="lv">Virtuve un svinības</span><span data-lang="ru" hidden>Кухня и праздники</span></p>
+      <div>
+        <blockquote><span data-lang="lv">„Klājam galdus, paši gatavojam!”</span><span data-lang="ru" hidden>«Накрываем столы, готовим сами!»</span></blockquote>
+        <p class="who"><span data-lang="lv">Tā par sevi raksta saimnieki</span><span data-lang="ru" hidden>Так о себе пишут хозяева (перевод)</span></p>
+      </div>
+      <p><span data-lang="lv">Banketa galdu var pasūtīt pie mums, ēdienus, dzērienus un uzkodas var nopirkt arī bārā. Kāzām piedāvājam dzīvo mūziku, vakara vadītāju, telpu dekorēšanu, salūtu un transportu jaunajam pārim un viesiem. Pirtij var pasūtīt pirtnieku un slotas.</span><span data-lang="ru" hidden>Банкетный стол можно заказать у нас, блюда, напитки и закуски можно купить и в баре. Для свадеб предлагаем живую музыку, ведущего, оформление зала, салют и транспорт для молодых и гостей. В баню можно заказать банщика и веники.</span></p>
+      <div class="two">
+        <figure><img src="img/svinibu-galds.jpg" width="520" height="390" loading="lazy" alt="Svinību galds ar baltiem krēsliem un zaļām lentēm"></figure>
+        <figure><img src="img/varti.jpg" width="520" height="390" loading="lazy" alt="Ziedu arka pie sētas vārtiem"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" aria-label="Atsauksmes">
+  <div class="wrap">
+    <p class="eyebrow"><span data-lang="lv">Ko raksta viesi</span><span data-lang="ru" hidden>Что пишут гости</span></p>
+    <div class="q">
+      <blockquote>
+        <p><span data-lang="lv">„Plānotais pasākums viesu namā izdevās par 200%, jo ērta piebraukšana, siltas, tīras telpas, laipna apkalpošana, garšīgs ēdiens.”</span><span data-lang="ru" hidden>«Запланированное мероприятие в гостевом доме удалось на 200%: удобный подъезд, тёплые, чистые помещения, приветливое обслуживание, вкусная еда.»</span></p>
+        <cite><span data-lang="lv">Regina Eihmane, Google atsauksme</span><span data-lang="ru" hidden>Regina Eihmane, отзыв в Google, перевод</span></cite>
+      </blockquote>
+      <blockquote>
+        <p><span data-lang="lv">„Ļoti mājīgs viesu nams. Kāzu mielasts bija ļoti gards un plašs, apkalpošana patīkama un nemanāma. Sakām milzu paldies un iesakām šo viesu namu arī citiem!”</span><span data-lang="ru" hidden>«Очень уютный гостевой дом. Свадебный стол был очень вкусным и щедрым, обслуживание приятное и незаметное. Огромное спасибо, советуем этот гостевой дом и другим!»</span></p>
+        <cite><span data-lang="lv">Madara, viesunamiem.lv, 2015. gads</span><span data-lang="ru" hidden>Madara, viesunamiem.lv, 2015 год, перевод</span></cite>
+      </blockquote>
+    </div>
+    <p class="more"><span data-lang="lv">Google kartēs viesu namam ir 245 atsauksmes.</span><span data-lang="ru" hidden>В Google Картах у гостевого дома 245 отзывов.</span> <a href="https://maps.google.com/?cid=16187234370640542250" target="_blank" rel="noopener"><span data-lang="lv">Lasīt visas</span><span data-lang="ru" hidden>Читать все</span></a></p>
+  </div>
+</section>
+
+<section class="yard">
+  <div class="wrap">
+    <div class="sec-h" style="margin-bottom:0">
+      <p class="eyebrow"><span data-lang="lv">Sēta</span><span data-lang="ru" hidden>Двор</span></p>
+      <h2><span data-lang="lv">Dīķis, šūpoles un bērzu birzs</span><span data-lang="ru" hidden>Пруд, качели и берёзовая роща</span></h2>
+      <p><span data-lang="lv">Nožogota teritorija ar dīķi, lapeni, lielām šūpolēm un bērnu rotaļu laukumu, vasarā arī batuts. Līdz Daugavai 500 metri, sabiedriskais transports ir pavisam tuvu.</span><span data-lang="ru" hidden>Огороженная территория с прудом, беседкой, большими качелями и детской площадкой, летом ещё и батут. До Даугавы 500 метров, общественный транспорт совсем рядом.</span></p>
+    </div>
+    <div class="mos">
+      <figure><img src="img/rudens.jpg" width="900" height="460" loading="lazy" alt="Guļbūve rudenī, dīķis priekšplānā"><figcaption><span data-lang="lv">Guļbūve rudenī. Foto: Juris Neretnieks, Google kartes</span><span data-lang="ru" hidden>Сруб осенью. Фото: Juris Neretnieks, Google Карты</span></figcaption></figure>
+      <figure><img src="img/supoles.jpg" width="520" height="390" loading="lazy" alt="Lielās koka šūpoles zālienā"><figcaption><span data-lang="lv">Lielās šūpoles</span><span data-lang="ru" hidden>Большие качели</span></figcaption></figure>
+      <figure><img src="img/rotalu-laukums.jpg" width="520" height="390" loading="lazy" alt="Bērnu rotaļu laukums ar slidkalniņu"><figcaption><span data-lang="lv">Bērnu laukums</span><span data-lang="ru" hidden>Детская площадка</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="req" id="datums">
+  <div class="wrap">
+    <div class="sec-h">
+      <p class="eyebrow"><span data-lang="lv">Datums un cena</span><span data-lang="ru" hidden>Дата и цена</span></p>
+      <h2><span data-lang="lv">Vai jūsu datums ir brīvs?</span><span data-lang="ru" hidden>Свободна ли ваша дата?</span></h2>
+      <p><span data-lang="lv">Cena atkarīga no viesu skaita un no tā, vai vajag pirti, galdu un nakšņošanu. Atzīmējiet to, un ziņa saimniekiem būs gatava.</span><span data-lang="ru" hidden>Цена зависит от числа гостей и от того, нужны ли баня, стол и ночлег. Отметьте это, и сообщение хозяевам будет готово.</span></p>
+    </div>
+    <form class="form" id="f" onsubmit="return false">
+      <div>
+        <div class="lbl"><span data-lang="lv">Kas par svinībām?</span><span data-lang="ru" hidden>Что за праздник?</span></div>
+        <div class="chips" data-k="what">
+          <button type="button" class="chip" data-v="kazas" aria-pressed="false"><span data-lang="lv">Kāzas</span><span data-lang="ru" hidden>Свадьба</span></button>
+          <button type="button" class="chip" data-v="jub" aria-pressed="false"><span data-lang="lv">Jubileja</span><span data-lang="ru" hidden>Юбилей</span></button>
+          <button type="button" class="chip" data-v="pirts" aria-pressed="false"><span data-lang="lv">Pirts vakars</span><span data-lang="ru" hidden>Вечер в бане</span></button>
+          <button type="button" class="chip" data-v="kol" aria-pressed="false"><span data-lang="lv">Kolektīvs</span><span data-lang="ru" hidden>Корпоратив</span></button>
+          <button type="button" class="chip" data-v="cits" aria-pressed="false"><span data-lang="lv">Cits</span><span data-lang="ru" hidden>Другое</span></button>
+        </div>
+      </div>
+      <div class="row2">
+        <div><label class="lbl" for="d"><span data-lang="lv">Datums</span><span data-lang="ru" hidden>Дата</span></label><input type="date" id="d"></div>
+        <div><div class="lbl"><span data-lang="lv">Viesi</span><span data-lang="ru" hidden>Гостей</span></div><div class="step"><button type="button" id="minus" aria-label="mazāk">−</button><output id="g">20</output><button type="button" id="plus" aria-label="vairāk">+</button></div></div>
+      </div>
+      <div>
+        <div class="lbl"><span data-lang="lv">Kura vieta?</span><span data-lang="ru" hidden>Какое место?</span></div>
+        <div class="chips" data-k="house">
+          <button type="button" class="chip" data-v="gul" aria-pressed="false"><span data-lang="lv">Guļbūve</span><span data-lang="ru" hidden>Сруб</span></button>
+          <button type="button" class="chip" data-v="maza" aria-pressed="false"><span data-lang="lv">Mazā pirts</span><span data-lang="ru" hidden>Малая баня</span></button>
+          <button type="button" class="chip" data-v="vies" aria-pressed="false"><span data-lang="lv">Viesnīca</span><span data-lang="ru" hidden>Гостиница</span></button>
+          <button type="button" class="chip" data-v="nam" aria-pressed="false"><span data-lang="lv">Namiņš</span><span data-lang="ru" hidden>Домик</span></button>
+          <button type="button" class="chip" data-v="nez" aria-pressed="true"><span data-lang="lv">Vēl nezinu</span><span data-lang="ru" hidden>Пока не знаю</span></button>
+        </div>
+      </div>
+      <div>
+        <div class="lbl"><span data-lang="lv">Vajag arī</span><span data-lang="ru" hidden>Нужно ещё</span></div>
+        <div class="chips" data-k="need" data-multi="1">
+          <button type="button" class="chip" data-v="pirti" aria-pressed="false"><span data-lang="lv">Pirti</span><span data-lang="ru" hidden>Баню</span></button>
+          <button type="button" class="chip" data-v="galdu" aria-pressed="false"><span data-lang="lv">Galdu no jūsu virtuves</span><span data-lang="ru" hidden>Стол с вашей кухни</span></button>
+          <button type="button" class="chip" data-v="nakti" aria-pressed="false"><span data-lang="lv">Nakšņošanu</span><span data-lang="ru" hidden>Ночлег</span></button>
+        </div>
+      </div>
+      <div><label class="lbl" for="nm"><span data-lang="lv">Jūsu vārds</span><span data-lang="ru" hidden>Ваше имя</span></label><input type="text" id="nm" autocomplete="name"></div>
+      <div class="sendrow">
+        <a class="btn btn-h" id="mail" href="#"><span data-lang="lv">Rakstīt e-pastu</span><span data-lang="ru" hidden>Написать письмо</span></a>
+        <a class="btn btn-o" id="sms" href="#"><span data-lang="lv">Sūtīt īsziņu</span><span data-lang="ru" hidden>Отправить SMS</span></a>
+      </div>
+      <details class="peek"><summary><span data-lang="lv">Skatīt ziņu</span><span data-lang="ru" hidden>Посмотреть сообщение</span></summary><pre id="pv"></pre></details>
+      <p class="fine"><span data-lang="lv">Lapa pati neko nesūta: poga atver jūsu e-pastu vai īsziņu ar gatavu tekstu.</span><span data-lang="ru" hidden>Страница сама ничего не отправляет: кнопка открывает вашу почту или SMS с готовым текстом.</span></p>
+    </form>
+  </div>
+</section>
+
+<section class="way" id="cels">
+  <div class="wrap grid">
+    <div>
+      <div class="sec-h" style="margin-bottom:16px">
+        <p class="eyebrow"><span data-lang="lv">Ceļš</span><span data-lang="ru" hidden>Дорога</span></p>
+        <h2><span data-lang="lv">12 km pa Bauskas šoseju</span><span data-lang="ru" hidden>12 км по Баускому шоссе</span></h2>
+      </div>
+      <address>„Svelmes”, <span data-lang="lv">Bauskas šosejas 12. km</span><span data-lang="ru" hidden>12-й км Бауского шоссе</span>,<br>Katlakalns, <span data-lang="lv">Ķekavas pagasts</span><span data-lang="ru" hidden>Кекавская волость</span>, LV-2111</address>
+      <div class="btns">
+        <a class="btn btn-d" href="https://maps.google.com/?cid=16187234370640542250" target="_blank" rel="noopener">Google Maps</a>
+        <a class="btn btn-d" href="https://waze.com/ul?ll=56.8686447,24.1786752&amp;navigate=yes" target="_blank" rel="noopener">Waze</a>
+      </div>
+    </div>
+    <dl class="kv">
+      <dt><span data-lang="lv">Tālrunis</span><span data-lang="ru" hidden>Телефон</span></dt><dd><a href="tel:+37129172544">29 172 544</a></dd>
+      <dt><span data-lang="lv">E-pasts</span><span data-lang="ru" hidden>E-mail</span></dt><dd><a href="mailto:svelmes@inbox.lv">svelmes@inbox.lv</a></dd>
+      <dt>Facebook</dt><dd><a href="https://www.facebook.com/svelmes" target="_blank" rel="noopener">svelmes</a></dd>
+      <dt><span data-lang="lv">Atvērts</span><span data-lang="ru" hidden>Открыто</span></dt><dd><span data-lang="lv">Visu diennakti, tā norādīts Google kartē. Par pirti un svinībām vienojamies ar katru viesi.</span><span data-lang="ru" hidden>Круглосуточно, так указано в Google Картах. О бане и празднике договариваемся с каждым гостем.</span></dd>
+    </dl>
+  </div>
+  <div class="wrap">
+    <details class="note-o" id="piezime">
+      <summary><span data-lang="lv">Piezīme saimniekiem: ko šī lapa salabo</span><span data-lang="ru" hidden>Заметка для хозяев: что исправляет эта страница</span></summary>
+      <div class="in">
+        <p><span data-lang="lv">Jūsu vecā adrese svelmes.lv Jums vairs nepieder. Tajā tagad atveras lapa ar uzrakstu „Buy this domain” un saiti uz domēnu tirgotāju, bet uz to joprojām ved poga „Vietne” Jūsu Google profilā, saite Facebook lapā un ieraksti pirtis.lv un viesunamiem.lv.</span><span data-lang="ru" hidden>Ваш старый адрес svelmes.lv вам больше не принадлежит. Сейчас там открывается страница с надписью „Buy this domain” и ссылкой на продавца доменов, но на него до сих пор ведут кнопка «Сайт» в вашем профиле Google, ссылка на странице в Facebook и записи на pirtis.lv и viesunamiem.lv.</span></p>
+        <img src="img/tagad.jpg" width="498" height="519" loading="lazy" alt="svelmes.lv: pārdošanā izlikta domēna lapa">
+        <p><span data-lang="lv">Šī lapa ir domāta jaunai, Jūsu pašu adresei. Veco svelmes.lv tur domēnu pārpircējs, un es nesolu to atgūt. Pieprasījums par datumu atnāk uz svelmes@inbox.lv.</span><span data-lang="ru" hidden>Эта страница рассчитана на новый, ваш собственный адрес. Старый svelmes.lv держит перекупщик доменов, и я не обещаю его вернуть. Запрос о дате приходит на svelmes@inbox.lv.</span></p>
+        <p><span data-lang="lv">Fotogrāfijas ir Jūsu pašu, no Jūsu 2016. gada lapas kopijas interneta arhīvā. Tām ir ap desmit gadu, tāpēc pirms publicēšanas lūgšu apstiprināt, ka viss joprojām izskatās tā. Cenas lapā nav rakstītas, jo tās nav publiskas.</span><span data-lang="ru" hidden>Фотографии ваши собственные, из копии вашего сайта 2016 года в интернет-архиве. Им около десяти лет, поэтому перед публикацией попрошу подтвердить, что всё по-прежнему так выглядит. Цен на странице нет, потому что они нигде не опубликованы.</span></p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#sakums"><svg aria-hidden="true"><use href="#s-mark"/></svg><span><b>SVELMES</b><small><span data-lang="lv">viesu nams</span><span data-lang="ru" hidden>гостевой дом</span></small></span></a>
+    <p><span data-lang="lv">Šī lapa ir Nikitas dizaina priekšlikums, nevis viesu nama „Svelmes” oficiālā lapa. Jautājumi:</span><span data-lang="ru" hidden>Эта страница: дизайн-предложение Никиты, а не официальный сайт гостевого дома «Svelmes». Вопросы:</span> <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></p>
+    <p><span data-lang="lv">Fotogrāfijas ir viesu nama pašu, no svelmes.lv 2016. gada kopijas interneta arhīvā; svinību galds ar zaļajām lentēm ir no viesu nama ieraksta pirtis.lv. Klātais galds un guļbūve rudenī: Juris Neretnieks, Google kartes. Atsauksmes: Google kartes un viesunamiem.lv. Zīme „S” ir pārzīmēta no viesu nama stenda pie ceļa.</span><span data-lang="ru" hidden>Фотографии принадлежат гостевому дому, из копии svelmes.lv 2016 года в интернет-архиве; праздничный стол с зелёными лентами взят из записи гостевого дома на pirtis.lv. Накрытый стол и сруб осенью: Juris Neretnieks, Google Карты. Отзывы: Google Карты и viesunamiem.lv. Знак «S» перерисован со стенда гостевого дома у дороги.</span></p>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <a class="btn btn-h" href="#datums"><span data-lang="lv">Pajautāt par datumu</span><span data-lang="ru" hidden>Спросить о дате</span></a>
+  <a class="btn tel" href="tel:+37129172544" aria-label="Zvanīt 29 172 544"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var MAIL='svelmes@inbox.lv', TEL='+37129172544';
+  var T={
+    lv:{hi:'Labdien!', intro:'Vēlos pajautāt par brīvu datumu viesu namā „Svelmes”.',
+      what:{kazas:'kāzas',jub:'jubileja',pirts:'pirts vakars',kol:'kolektīva pasākums',cits:'cits pasākums'},
+      house:{gul:'guļbūve',maza:'mazā pirts ar baseinu',vies:'viesnīcas numuriņi',nam:'namiņš',nez:'vēl nezinu, lūdzu, iesakiet'},
+      need:{pirti:'pirts',galdu:'galds no jūsu virtuves',nakti:'nakšņošana'},
+      lWhat:'Pasākums: ', lDate:'Datums: ', lG:'Viesu skaits: ', lH:'Vieta: ', lN:'Vajag arī: ', noDate:'vēl nav zināms',
+      ask:'Lūdzu, atrakstiet, vai datums ir brīvs un cik tas maksātu. Paldies!', subj:'Jautājums par datumu viesu namā Svelmes',
+      wd:['svētdiena','pirmdiena','otrdiena','trešdiena','ceturtdiena','piektdiena','sestdiena'],
+      mo:['janvāris','februāris','marts','aprīlis','maijs','jūnijs','jūlijs','augusts','septembris','oktobris','novembris','decembris'],
+      fmt:function(d){return this.wd[d.getDay()]+', '+d.getDate()+'. '+this.mo[d.getMonth()]+(d.getFullYear()!==new Date().getFullYear()?' '+d.getFullYear()+'.':'')},
+      title:'Svelmes, viesu nams pie Bauskas šosejas (dizaina priekšlikums)'},
+    ru:{hi:'Здравствуйте!', intro:'Хочу узнать, свободна ли дата в гостевом доме «Svelmes».',
+      what:{kazas:'свадьба',jub:'юбилей',pirts:'вечер в бане',kol:'корпоратив',cits:'другое мероприятие'},
+      house:{gul:'сруб',maza:'малая баня с бассейном',vies:'номера гостиницы',nam:'домик',nez:'пока не знаю, посоветуйте, пожалуйста'},
+      need:{pirti:'баня',galdu:'стол с вашей кухни',nakti:'ночлег'},
+      lWhat:'Мероприятие: ', lDate:'Дата: ', lG:'Гостей: ', lH:'Место: ', lN:'Нужно ещё: ', noDate:'пока не известна',
+      ask:'Пожалуйста, напишите, свободна ли дата и сколько это будет стоить. Спасибо!', subj:'Вопрос о дате в гостевом доме Svelmes',
+      wd:['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+      mo:['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'],
+      fmt:function(d){return this.wd[d.getDay()]+', '+d.getDate()+' '+this.mo[d.getMonth()]+(d.getFullYear()!==new Date().getFullYear()?' '+d.getFullYear():'')},
+      title:'Svelmes, гостевой дом у Бауского шоссе (дизайн-предложение)'}
+  };
+  var lang='lv';
+  try{var q=new URLSearchParams(location.search).get('lang'); if(q==='lv'||q==='ru')lang=q; else {var s=localStorage.getItem('svelmes-lang'); if(s==='lv'||s==='ru')lang=s;}}catch(e){}
+  var S={what:'',house:'nez',need:[] ,g:20};
+  function $(id){return document.getElementById(id)}
+  function setLang(l){
+    lang=l; document.documentElement.lang=l;
+    document.querySelectorAll('[data-lang]').forEach(function(el){el.hidden=el.getAttribute('data-lang')!==l});
+    document.querySelectorAll('.langs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l))});
+    document.title=T[l].title;
+    try{localStorage.setItem('svelmes-lang',l)}catch(e){}
+    render();
+  }
+  function parse(v){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(v||''); return m?new Date(+m[1],+m[2]-1,+m[3]):null}
+  function build(){
+    var L=T[lang], d=parse($('d').value), nm=$('nm').value.replace(/\s+/g,' ').trim();
+    var lines=[L.hi,'',L.intro,''];
+    if(S.what)lines.push(L.lWhat+L.what[S.what]);
+    lines.push(L.lDate+(d?L.fmt(d):L.noDate));
+    lines.push(L.lG+S.g);
+    lines.push(L.lH+L.house[S.house]);
+    if(S.need.length)lines.push(L.lN+S.need.map(function(k){return L.need[k]}).join(', '));
+    lines.push('',L.ask);
+    if(nm)lines.push('',nm);
+    return lines.join('\n');
+  }
+  function render(){
+    var L=T[lang], body=build();
+    $('pv').textContent='→ '+MAIL+'\n\n'+body;
+    $('mail').href='mailto:'+MAIL+'?subject='+encodeURIComponent(L.subj)+'&body='+encodeURIComponent(body);
+    $('sms').href='sms:'+TEL+'?&body='+encodeURIComponent(body);
+  }
+  document.querySelectorAll('.chips').forEach(function(g){
+    g.addEventListener('click',function(e){
+      var b=e.target.closest('.chip'); if(!b)return;
+      var k=g.dataset.k, v=b.dataset.v;
+      if(g.dataset.multi){
+        var on=b.getAttribute('aria-pressed')!=='true'; b.setAttribute('aria-pressed',String(on));
+        S.need=[].slice.call(g.querySelectorAll('.chip[aria-pressed="true"]')).map(function(x){return x.dataset.v});
+      } else {
+        var was=b.getAttribute('aria-pressed')==='true';
+        g.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed','false')});
+        if(!(was&&k==='what')){b.setAttribute('aria-pressed','true'); S[k]=v} else S[k]='';
+        if(k==='house'&&was){b.setAttribute('aria-pressed','true')}
+      }
+      render();
+    });
+  });
+  function setG(n){S.g=Math.max(1,Math.min(120,n)); $('g').textContent=S.g; render()}
+  $('minus').addEventListener('click',function(){setG(S.g-(S.g>10?5:1))});
+  $('plus').addEventListener('click',function(){setG(S.g+(S.g>=10?5:1))});
+  $('d').addEventListener('change',render); $('nm').addEventListener('input',render);
+  try{var t=new Date(); $('d').min=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0')}catch(e){}
+  document.querySelectorAll('.ask[data-house]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var v=a.dataset.house; S.house=v;
+      document.querySelectorAll('[data-k="house"] .chip').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.v===v))});
+      render(); $('datums').scrollIntoView({behavior:'smooth'});
+    });
+  });
+  document.querySelectorAll('.langs button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+  var bar=$('bar');
+  if('IntersectionObserver' in window){
+    var hide={hero:true,req:false};
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){hide[e.target.id==='sakums'?'hero':'req']=e.isIntersecting}); bar.classList.toggle('off',hide.hero||hide.req)},{threshold:0.05});
+    io.observe($('sakums')); io.observe($('datums'));
+  }
+  window.__svCompose=build;
+  setLang(lang);
+})();
+</script>
+</body>
+</html>
